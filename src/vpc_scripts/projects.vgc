@@ -16,7 +16,8 @@ $Project "captioncompiler"
 
 $Project "client"
 {
-	"game\client\client_hl2mp.vpc"		[($WIN32||$POSIX) && $HL2MP]
+	"game\client\client_mohaasource.vpc"		[($WIN32||$POSIX) && $MOHAASOURCE]
+	"game\client\client_hl2mp.vpc"				[($WIN32||$POSIX) && $HL2MP]
 }
 
 $Project "fgdlib"
@@ -41,7 +42,8 @@ $Project "height2normal"
 
 $Project "server"
 {
-	"game\server\server_hl2mp.vpc"		[($WIN32||$POSIX) && $HL2MP]
+	"game\server\server_mohaasource.vpc"		[($WIN32||$POSIX) && $MOHAASOURCE]
+	"game\server\server_hl2mp.vpc"				[($WIN32||$POSIX) && $HL2MP]
 }
 
 $Project "mathlib"
