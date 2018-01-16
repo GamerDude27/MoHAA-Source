@@ -66,6 +66,7 @@ void FinishClientPutInServer( CHL2MP_Player *pPlayer )
 	const ConVar *hostname = cvar->FindVar( "hostname" );
 	const char *title = (hostname) ? hostname->GetString() : "MESSAGE OF THE DAY";
 
+	/*
 	KeyValues *data = new KeyValues("data");
 	data->SetString( "title", title );		// info panel title
 	data->SetString( "type", "1" );			// show userdata from stringtable entry
@@ -75,6 +76,7 @@ void FinishClientPutInServer( CHL2MP_Player *pPlayer )
 	pPlayer->ShowViewPortPanel( PANEL_INFO, true, data );
 
 	data->deleteThis();
+	*/
 }
 
 /*
